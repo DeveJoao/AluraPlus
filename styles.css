@@ -1,0 +1,159 @@
+:root { /* estrutrura de variavels */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body {
+    background-color: var(--cor-de-fundo); /* cor de fundo do elemento */
+    color: var(--branco-principal); /* cor do testo do elemento */
+    font-family: var(--fonte-principal); /* familia da fonte */
+    font-size: 16px; /* tanhanho da fonte */
+    font-weight: 400; /* Peo da fonte */
+}
+
+* {
+    margin: 0px; /* margen do elemento para outro */
+    padding: 0px; /* espaçamento interno do elemento*/
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* vai pega todo nosso container como tamaho da imagem */
+    align-items: center; /* alinha ao centro da coluna com o grid */
+    text-align: center; /* alinha o texto */
+
+}
+
+.container {
+    height: 100vh; /* conteiner vai ter 100% da tela */
+    display: grid; /*?????*/
+    grid-template-columns: 50% 50%; /*????*/
+}
+
+.container__botao {
+    background-color: var(--botao-azul); /* cor de fundo */
+    border-radius: 5px; /* aredondamento da borda */
+    padding: 1em; /* espaçamento interno de 1em = 16px em cada direção */
+    color: var(--branco-principal); /* cor de testo */
+    display: block; /* display em bloco*/
+    text-decoration: none; /* tirou a decoração do texto */
+    margin-bottom: 1em; /* margim de baixo */
+}
+
+.botao__secundario {
+    background-color: transparent; /* fundo trasparente */
+    border: 2px solid var(--branco-principal); /* borda branca */
+}
+
+.container__avsio {
+    font-size: 12px; /* tamanho da fonte */
+    color: var(--cinza-secundario); /* cor do texto */
+}
+
+.container__titulo {
+    font-size: 28px; /* tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* margin da imagem */
+}
+
+.container__caixa {
+    margin: 0 6em; /* margin na div */
+}
+
+.secundario__imagem {
+    width: 80%; /* largura da imagem */
+}
+
+.secundario {
+    align-items: center; /* alinhamento da imagem e do testo da segunda section */
+    margin: 0 10em; /* margin */
+}
+
+.descricao__titulo {
+    font-style: 700; /* pesso da fonte */
+    font-size: 48px; /* tamanho do texto */
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1em;
+}
+
+.lista__link {
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    font-size: 14px;
+    margin-bottom: 1.5em;
+    color: var(--cinza-secundario);
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
